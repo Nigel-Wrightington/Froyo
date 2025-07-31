@@ -16,6 +16,8 @@ orderButton.addEventListener("click", () => {
     // "vanilla,chocolate,raspberry,vanilla,raspberry,chocolate"
   );
 
+  alert("Thank you for your order!");
+
   //adding a comma above and then inputting my own string, I can add my own input to show up everytime. This is good for constructing/testing the code.
 
   //we are declaring a variable selectArray where we will store all the user input info. We are using the split method() as the argument, to

@@ -7,7 +7,7 @@ const log = document.querySelector("#log");
 //Pretty much that is an gonna keep a look out for a specific event to go off, like a user clicking
 //a mouse. There are many different types of events that get fired off in different locations. Look up specifics when using.
 orderButton.addEventListener("click", () => {
-  //prompt method () prompts user with text box to user input, an "OK" button, and a "cancel" button.
+  //prompt method () prompts user with text box for user input, an "OK" button, and a "cancel" button.
   //inside prompt method ("the user prompt for what you want them to type in goes inside the round brackets")
   // let order - is creating a variable to store the user input within.
   let order = prompt(
@@ -18,7 +18,7 @@ orderButton.addEventListener("click", () => {
 
   //adding a comma above and then inputting my own string, I can add my own input to show up everytime. This is good for constructing/testing the code.
 
-  //we are declaring a variable selectArray where will will store all the user input info. We are using the split method() as the argument, to
+  //we are declaring a variable selectArray where we will store all the user input info. We are using the split method() as the argument, to
   //delimit/separate the user input from eachother.
   let flavorsArray = order.split(",");
   console.log(flavorsArray);
@@ -44,4 +44,10 @@ orderButton.addEventListener("click", () => {
     }
   }
   console.log("flavors", flavorCounter);
+
+
+  //ALWAYS THINK ABOUT WHAT YOU WANT OUTPUTTED AT THE END. IN THIS CASE WE WANTED FLAVORS TO BE
+  //LISTED WITH THEIR COUNT VALUE. SO WE ADDED A FLAVOR COUNTER AND A FLAVOR VARIABLE. THEN WE RAN THE INDEX THROUGH THE LOOP AND MADE IT LOOK
+  //FOR FLAVOR AND THEN USED AN IF STATEMENT TO ADD TO BOTH OF THOSE VARIABLES. THEN WE RETURNED BOTH OF THOSE VARIABLES AT THE
+  //END TO SUCCEED IN OUR OUTPUT.
 });
